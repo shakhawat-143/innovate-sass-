@@ -1,0 +1,68 @@
+@import "../mixins/mixin";
+#people-think {
+  padding: 100px 0;
+  background-color: #f8f8ff;
+  .title {
+    h2 {
+      text-align: center;
+      @include heading;
+    }
+  }
+  .think-wraper {
+    margin-top: 152px;
+    .slider {
+      .item {
+        padding-bottom: 56px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        text-align: center;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        position: relative;
+        img {
+            border-radius: 50%;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            position: absolute;
+            top: 0%;
+            left: 48%;
+            transform: translate(-50%, -42%);
+            -webkit-transform: translate(-50%, -42%);
+            -moz-transform: translate(-50%, -42%);
+            -ms-transform: translate(-50%, -42%);
+            -o-transform: translate(-50%, -42%);
+}
+        ul {
+          padding: 120px 0 33px;
+          display: flex;
+          justify-content: center;
+          gap: 5px;
+          li {
+            color: #ff7628;
+          }
+        }
+        p {
+          width: 55%;
+          margin: 0 auto;
+          @include defaulttxt;
+        }
+        h3 {
+          margin-top: 48px;
+          @include subheading;
+        }
+        span {
+          font-family: $seconderyfont;
+          font-size: 16px;
+          color: $secondercolor;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}

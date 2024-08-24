@@ -1,0 +1,54 @@
+@import "../mixins/mixin";
+#footer{
+    padding-top: 140px;
+    background-color: $secondercolor;
+    .foot-wraper{
+        .foot-txt{
+            font-family: $thirdfont;
+            font-size: 18px;
+            line-height: 180%;
+            margin-top: 44px;
+            color: $white;
+        }
+        h3{
+            text-transform: capitalize;
+            @include subheading($color: $white)
+        }
+        ul{
+            margin-top: 48px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            li{
+                a{
+                    font-family: $thirdfont;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 120%;
+                    color: $white;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+    .cpoyright{
+        margin-top: 80px;
+        padding-bottom: 30px;
+        p{
+            display: flex;
+            justify-content: space-between;
+            font-family: $thirdfont;
+            font-size: 18px;
+            line-height: 180%;
+            color:$white;
+            text-transform: capitalize;
+            .privacytarms{
+                display: flex;
+                gap: 60px;
+                a{
+                    color: $white;
+                }
+            }
+        }
+    }
+}

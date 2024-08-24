@@ -1,0 +1,43 @@
+@mixin button($padding: 20px 40px, $fw: 700 , $bg: transparent , $hbg: $brand){
+    font-family: $primarifont;
+    font-weight: $fw;
+    font-size: 20px;
+    line-height: 24px;
+    padding: $padding;
+    border: 2px solid $brand;
+    color: $white;
+    background-color: $bg;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    text-transform: capitalize;
+    &:hover{
+        background-color: $brand;
+    }
+}
+@mixin heading{
+    font-family: $primarifont;
+    font-size: 48px;
+    font-weight: 700;
+    color: $heading;
+}
+@mixin defaulttxt($color: #726E9E){
+    font-family: $seconderyfont;
+    font-size: 18px;
+    line-height: 30px;
+    color: $color;
+}
+@mixin subheading($color: $heading){
+    font-family: $primarifont;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color: $color;
+}

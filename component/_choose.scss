@@ -1,0 +1,72 @@
+@import "../mixins/mixin";
+#choose {
+  padding: 100px 0 90px;
+  position: relative;
+  .chooseshap{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .choose-txt {
+    .item {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        padding: 24px 146px 24px 28px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        transition: .4s;
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -ms-transition: .4s;
+        -o-transition: .4s;
+        &:hover{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+      .icon {
+        padding: 10px;
+        background-color: $brand;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        position: relative;
+        &::after {
+          content: "";
+          width: 100%;
+          height: 100%;
+          background-color: #cbc8f0;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+        }
+      }
+      .txt {
+        p {
+          @include defaulttxt;
+        }
+      }
+    }
+  }
+  h2{
+    @include heading;
+  }
+  p{
+    @include defaulttxt;
+    width: 393px;
+    margin-top: 8px;
+  }
+  .choosebtn{
+    @include button($bg: $brand);
+    margin-top: 41px;
+  }
+}

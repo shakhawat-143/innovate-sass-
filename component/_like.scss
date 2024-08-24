@@ -1,0 +1,76 @@
+@import "../mixins/mixin";
+#like {
+  padding: 100px 0;
+  position: relative;
+  .title {
+    h2 {
+      @include heading;
+    }
+  }
+  .like-wraper {
+    margin-top: 64px;
+    row-gap: 60px;
+    .txt {
+      margin-left: 80px;
+      p {
+        display: flex;
+        gap: 35px;
+        font-family: $fourfont;
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
+        color: $secondercolor;
+        .type {
+          color: $brand;
+          line-height: 22px;
+          font-weight: 700;
+        }
+      }
+      h3 {
+        font-family: $primarifont;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 55px;
+        letter-spacing: -1.5px;
+        width: 80%;
+        margin-top: 16px;
+        color: $heading;
+      }
+      a {
+        margin-top: 16px;
+        font-family: $primarifont;
+        font-size: 18;
+        font-weight: 700;
+        line-height: 24px;
+        color: $heading;
+        padding: 8px 10px;
+        position: relative;
+        z-index: 1;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        overflow: hidden;
+        &::after {
+          content: "";
+          width: 25%;
+          height: 100%;
+          background-color: $brand;
+          opacity: .3;
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: -1;
+        }
+      }
+    }
+  }
+  .likevictor{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+  }
+}

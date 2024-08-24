@@ -1,0 +1,35 @@
+@import "../mixins/mixin";
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  nav {
+    background: rgba(22, 12, 109, 0.7);
+    padding: 18px 0;
+    .collapse {
+      .navbar-nav {
+        gap: 40px;
+        .nav-item {
+          .nav-link {
+            font-family: $primarifont;
+            font-weight: 600;
+            font-size: 18px;
+            color: $white;
+            text-transform: capitalize;
+            &:hover {
+              color: $brand;
+            }
+          }
+          .active {
+            color: $brand;
+          }
+        }
+      }
+      .navbtn {
+        @include button($padding: 14px 28px, $bg: $brand );
+      }
+    }
+  }
+}
